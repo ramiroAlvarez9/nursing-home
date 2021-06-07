@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.footer{
+    display:none;
+}
+
+@media(min-width:1366px){
+    .footer{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        width: 100vw;
+        height: 50vh;
+        border-top: solid 1px rgba(128, 128, 128, 0.144);
+        box-shadow: 8px 3px 3px rgba(128, 128, 128, 0.26);
+        background-color: $color2;
+        margin-top: 10%;
+        .footer__title{
+            color: white;
+            font-family: $typography2;
+            margin-bottom:1%;
+            font-size:2vw;
+        }
+        .footer__iconos{
+            height: 80px;
+            width: 80px;
+            margin-right:30px;
+            margin-left:5px;
+        }
+    }
+}

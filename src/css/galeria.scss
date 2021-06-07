@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+.h2{
+    font-size: 9vw;
+    font-family: $typography2;
+    margin: -10% 0 10% 5%;    
+    color: $servicios-title;
+
+}
+.gallery-desktop{
+    display:none;
+
+}
+@media (min-width: 1023px){
+
+    .static-image-gallery{
+        margin-left: 0;
+        width:100%;
+    }
+}
+@media(min-width:1366px){
+
+    .gallery{
+        display:none;
+    }
+    .gallery-desktop{
+        margin-top:-1%;
+        margin-bottom: -10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          ". ."
+          ". ."
+          ". .";
+    }
+
+}

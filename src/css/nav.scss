@@ -1,0 +1,102 @@
+@import './variables.scss';
+
+.header {
+    width: 100vw;
+    height: 25vh;
+    margin-top:2vh;
+    
+    .header__nav--logo--image{
+        display:none;
+    }
+}
+.header__nav{
+    float: right;
+    #link-desktop{
+        display:none;
+    }
+    .header__nav--icon{
+        width:60px;
+        height:60px;
+    }
+    .header__nav--menu--desplegado--logo{
+        height:20vh;
+        width: 100vw;
+        display:flex;
+        justify-content:center;
+    }
+    .header__nav--menu--desplegado--container{
+        margin-top:5vh;
+        height: 70vh;
+        width:100vw;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column; 
+        font-family: $typography2;
+        .header__nav--menu-desplegado--container--link{
+            display: block;
+            padding: 5vh 0 5vh 0;
+            text-decoration: none;
+            border-bottom: solid 1px #1b4a6463;
+            width: 100%;
+            text-align: center;
+            color: $color4;
+        }    
+    }
+}
+@media (min-width: 1366px){
+    .header{
+        position:fixed;
+        z-index:1;
+        top:-20px;
+        width: 100vw;
+        height: 20vh;
+        background-color:white;
+        box-shadow: 8px 3px 3px rgba(128, 128, 128, 0.26);
+        border-bottom:solid 1px rgba(128, 128, 128, 0.26);
+        
+        #link-desktop{
+            display:inherit;
+        }
+        //eliminamos los menus del mobile
+        .header__nav--menu--desplegado{
+            display:none;
+        }
+        //eliminamos los menus del mobile
+        .header__nav--icon{
+            display:none;
+        }
+        //hacemos aparecer el icono, que dentro de mobile no existe.
+        .header__nav--logo--image{
+            display:inherit;
+            margin-left: 5%;
+        }
+        .header__nav{
+            display:flex;
+            width:100vw;
+            height:100%;
+            //margin: 0 5vw 0 5vw;
+            align-items:center;
+            
+            .header__nav--menu-desplegado--container--link{
+                display:inline;
+                width: 5%;
+                margin-left:9%;
+                border:none;
+                font-family: $typography2;
+                font-size:30px;
+                display:none;
+                color: $color1;
+                text-decoration: none;
+
+            }
+            
+            .header__nav--menu-desplegado--container--link:hover{
+                opacity: 90%;
+                transition: transform 0.1s;
+                transform: scale(1.1,1.1);
+            }
+            
+        }           
+    }
+}

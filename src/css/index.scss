@@ -1,0 +1,82 @@
+@import './variables.scss';
+body{
+    font-family: $typography;
+}
+.section{
+    margin-left:5%;
+    //esto deberia llamarse: section__bienvenidoa
+    .section__h1{
+        font-size:14vw;
+        font-family: 'PT Serif', serif;
+        color: $color1;
+    }
+    .section__logo{
+        margin-top: 2%;
+        font-family: 'PT Serif', serif;
+    }
+    .section__logo--aires{
+        color: $color1;
+        font-size:19vw;
+    }
+    .section__logo--de{
+        font-size:9vw;
+        color:$color2;
+    }
+    .section__logo--citybell{
+        font-size:19vw;
+        color: $color2;
+    }
+    .section__contacto{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border:solid 1px black;
+        margin-top: 8%;
+        width:70vw;
+        height: 8vh;
+        text-decoration: none;
+        border-radius: 3px;
+        color:white;
+        background-color: $color1;
+        border-style:none;
+        outline: none;
+        font-family: 'PT Serif', serif;
+        font-size:5vw;
+    }    
+}
+@media(min-width:1366px){
+    //centramos al medio el texto
+    .section-index{
+        width: 100vw;
+        //margin: 0 10vw 0 10vw;
+        .section__h1{
+            margin-top: 15%;
+            font-size:11vw;
+
+        }
+        .section__logo{
+            font-size:11vw;
+            width:100vw;
+            display:flex;
+            justify-content:center;          
+        }
+        .section__logo--aires{
+            font-size:11vw;
+        }
+        .section__logo--de{
+            font-size:7vw;
+           
+        }
+        .section__logo--citybell{
+            font-size:11vw;
+
+        }
+        .section__contacto{
+            width: 89%;
+            height:50%;
+            
+        }
+
+    }
+                                 
+}

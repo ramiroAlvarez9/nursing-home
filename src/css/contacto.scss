@@ -1,0 +1,108 @@
+@import "./variables.scss";
+
+.form {
+  max-width: 768px;
+  width: 90vw;
+  display: flex;
+  margin-left: 5%;
+  flex-direction: column;
+  grid-row-gap: 10px;
+  font-family: $typography2;
+  .form__input {
+    height: 7vh;
+    border: none;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.452);
+    outline: none;
+  }
+  .message {
+    padding: 0 13px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: var(--text-01);
+    font-size: 14px;
+  }
+  .textarea {
+    border-radius: 5px;
+    border-color: rgba(128, 128, 128, 0.452);
+    height: 20vh;
+    font-size: 14px;
+    outline: none;
+    padding: 12px 13px;
+    font-weight: 300;
+    resize: none;
+    margin-top: 5%;
+  }
+  .textarea::placeholder {
+    user-select: none;
+  }
+
+  .textarea::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  .textarea::-webkit-scrollbar:vertical {
+    width: 10px;
+  }
+
+  .textarea::-webkit-scrollbar-button:increment,
+  .textarea::-webkit-scrollbar-button {
+    display: none;
+  }
+  .textarea::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-01);
+    border-radius: 0 5px 5px 0;
+  }
+  .form > .button {
+    margin-top: 20px;
+    align-self: flex-end;
+    font-family: var(--font-primary);
+  }
+  .button {
+    border: none;
+    background-color: $color1;
+    color: white;
+    height: 5vh;
+    outline: none;
+    border-radius: 5px;
+  }
+  .desktop-map {
+    display: none;
+  }
+}
+  .desktop-map__iframe{
+    display:none;
+
+  }
+@media (min-width: 1366px) {
+  .section-contacto {
+    margin-top: 10%;
+    margin-bottom: -2%;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    .h2 {
+      display: none;
+    }
+  }
+  .form {
+    margin-top: 5%;
+    margin-left: 12%;
+    width:80%;
+  }
+  .form::before {
+    content: "Contactanos";
+    font-size: 6vw;
+    margin-bottom: 40px;
+    color: $color2-textos;
+  }
+  .desktop-map__iframe {
+    display:block;
+    margin-top: 10%;
+    width: 77%;
+    height: 90%;
+    box-shadow: -5px -2px 20px 5px rgba(128, 128, 128, 0.26);
+  }
+}

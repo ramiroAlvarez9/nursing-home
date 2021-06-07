@@ -7,6 +7,10 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-sass`,
+    "gatsby-plugin-react-svg",
+    `gatsby-remark-responsive-iframe`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

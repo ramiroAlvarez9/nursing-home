@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+
+.section__article--staff{
+
+    font-family: $typography2;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 10%;
+    .article__h3--staff{
+        color: $servicios-title;
+
+    }
+    .article__p--staff{
+
+        text-align: center;
+        color:$servicios-paragraph;
+        font-weight: bold;
+    }
+}
