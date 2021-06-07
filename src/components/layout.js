@@ -1,12 +1,11 @@
 import React from "react"
 import Helmet from "react-helmet"
 import "../css/reset.min.css"
-import '../css/footer.scss'
+import "../css/footer.scss"
 import Nav from "./Nav"
-import Facebook from '../images/facebook.svg'
-import WhatsApp from '../images/whats-app-outlined.svg'
-import Instagram from '../images/instagram-fill.svg'
-
+import Facebook from "../images/facebook.svg"
+import WhatsApp from "../images/whats-app-outlined.svg"
+import Instagram from "../images/instagram-fill.svg"
 
 const Layout = ({ title, children }) => {
   return (
@@ -39,12 +38,12 @@ const Layout = ({ title, children }) => {
         <Nav />
       </header>
       <main>{children}</main>
-      <footer className = "footer">
-        <div className = "footer__title">Siguenos en:</div>
-        <div className= "footer__title--icons">
-        <Facebook className = "footer__iconos"/>
-        <WhatsApp  className = "footer__iconos"/>
-        <Instagram  className = "footer__iconos"/>
+      <footer className="footer">
+        <div className="footer__title">Siguenos en:</div>
+        <div className="footer__title--icons">
+          <Facebook className="footer__iconos" />
+          <WhatsApp className="footer__iconos" />
+          <Instagram className="footer__iconos" />
         </div>
       </footer>
     </>

@@ -6,9 +6,7 @@ import { Link } from "gatsby"
 import MenuIcon from "../images/menu.svg"
 import CloseMenu from "../images/close-square-filled.svg"
 
-
 const Nav = () => {
-  
   const [desplegar, setDesplegar] = useState("-100%")
   const desplegarMenu = () => setDesplegar("0%")
   const ocultarMenu = () => setDesplegar("-100%")
@@ -16,55 +14,52 @@ const Nav = () => {
   return (
     <>
       <nav className="header__nav">
-          
-            <StaticImage
-              src="../images/aires-logo.png"
-              alt="logo-desktop"
-              layout="fixed"
-              className="header__nav--logo--image"
-              width = {230}
-              height = {230}
-            />
-            <Link
-                to="/"
-                className="header__nav--menu-desplegado--container--link"
-                id = "link-desktop"
-            >
-              Inicio
-            </Link>
-            <Link
-              to="/servicios"
-              className="header__nav--menu-desplegado--container--link"
-              id = "link-desktop"
-            >
-              Servicios
-            </Link>
-            <Link
-              to="/galeria"
-              className="header__nav--menu-desplegado--container--link"
-              id = "link-desktop"
-            >
+        <StaticImage
+          src="../images/aires-logo.png"
+          alt="logo-desktop"
+          layout="fixed"
+          className="header__nav--logo--image"
+          width={230}
+          height={230}
+        />
+        <Link
+          to="/"
+          className="header__nav--menu-desplegado--container--link"
+          id="link-desktop"
+        >
+          Inicio
+        </Link>
+        <Link
+          to="/servicios"
+          className="header__nav--menu-desplegado--container--link"
+          id="link-desktop"
+        >
+          Servicios
+        </Link>
+        <Link
+          to="/galeria"
+          className="header__nav--menu-desplegado--container--link"
+          id="link-desktop"
+        >
+          Galeria
+        </Link>
+        <Link
+          to="/staff"
+          className="header__nav--menu-desplegado--container--link"
+          id="link-desktop"
+        >
+          Staff
+        </Link>
+        <Link
+          to="/contacto"
+          className="header__nav--menu-desplegado--container--link"
+          id="link-desktop"
+        >
+          Contacto
+        </Link>
 
-              Galeria
-            </Link>
-            <Link
-              to="/staff"
-              className="header__nav--menu-desplegado--container--link"
-              id = "link-desktop"
-            >
-              Staff
-            </Link>
-            <Link
-              to="/contacto"
-              className="header__nav--menu-desplegado--container--link"
-              id = "link-desktop"
-            >
-              Contacto
-            </Link>
-
-        
         <MenuIcon className="header__nav--icon" onClick={desplegarMenu} />
-        
+
         <div
           className="header__nav--menu--desplegado"
           css={css`

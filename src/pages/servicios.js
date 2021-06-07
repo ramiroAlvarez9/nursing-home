@@ -7,7 +7,7 @@ const Servicios = () => {
   return (
     <>
       <Layout title="Servicios | Nursing home">
-        <section className= "section-servicios">
+        <section className="section-servicios">
           <h2 className="section__h2">Servicios</h2>
           <p className="section__p">
             Lorem Ipsum lorem lorem ipsumlorem ipsum lorem ipsum lorem ipsum
@@ -35,8 +35,7 @@ const Servicios = () => {
 
           <article className="section__article">
             <StaticImage src="../images/recreativo.jpg" />
-            <h3 className="article__h3">
-              ACTIVIDADES RECREATIVAS</h3>
+            <h3 className="article__h3">ACTIVIDADES RECREATIVAS</h3>
             <p className="article__p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               quis diam ut tortor rhoncus scelerisque eget in sapien. Etiam
