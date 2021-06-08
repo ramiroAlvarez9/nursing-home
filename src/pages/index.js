@@ -10,9 +10,9 @@ const IndexPage = () => (
         <h1 className="section__h1">Bienvenido a</h1>
         <div className="section__logo">
           <h2 className="section__logo--aires">
-            Aires <span className="section__logo--de">de</span>
+            Nursing <span className="section__logo--de">of</span>
           </h2>
-          <h2 className="section__logo--citybell">City Bell</h2>
+          <h2 className="section__logo--citybell">home</h2>
         </div>
         <Link to="/contacto" className="section__contacto">
           Solicita una entrevista hoy.

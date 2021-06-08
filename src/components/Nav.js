@@ -22,8 +22,8 @@ const Nav = () => {
           alt="logo-desktop"
           layout="fixed"
           className="header__nav--logo--image"
-          width={230}
-          height={230}
+          width={175}
+          height={175}
         />
         <Link
           to="/"
