@@ -3,6 +3,9 @@ import "../css/nav.scss"
 import { StaticImage } from "gatsby-plugin-image"
 import { css } from "@emotion/react"
 import { Link } from "gatsby"
+import FacebookM from "../images/facebook-fill-mobile.svg"
+import InstagramM from "../images/instagram-fill-mobile.svg"
+import WhatsAppM from '../images/whats-app-outlined-mobile.svg'
 import MenuIcon from "../images/menu.svg"
 import CloseMenu from "../images/close-square-filled.svg"
 
@@ -124,8 +127,15 @@ const Nav = () => {
               className="header__nav--menu-desplegado--container--link"
             >
               Contacto
-            </Link>
+            </Link>      
           </div>
+
+          <div className ="social-media-icons-mobile">
+            <FacebookM className = "icons-mobile"/>
+            <InstagramM className = "icons-mobile instagram-mobile"/>
+            <WhatsAppM className = "icons-mobile"/>
+          </div>
+
         </div>
       </nav>
     </>

@@ -23,6 +23,7 @@
         width: 100vw;
         display:flex;
         justify-content:center;
+
     }
     .header__nav--menu--desplegado--container{
         margin-top:5vh;
@@ -41,8 +42,28 @@
             width: 100%;
             text-align: center;
             color: $color4;
+    
         }    
+       
+       
+       
     }
+    .social-media-icons-mobile{
+        display:flex;
+        justify-content:center;
+        
+        .icons-mobile{
+
+            width:30px;
+            height:30px;
+        }
+        .instagram-mobile{
+
+            margin:0 2% 0 2%;
+
+        }
+    }        
+
 }
 @media (min-width: 1200px){
     .header{
@@ -98,5 +119,8 @@
             }
             
         }           
+    }
+    .social-media-icons-mobile{
+        display:none;
     }
 }
